@@ -21,15 +21,19 @@ def find_mismatch(text):
             if(not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next)):
                 return i+1
             opening_brackets_stack.pop()
-        # if opening_brackets_stack:
-        #     return opening_brackets_stack[-1].position
+    if opening_brackets_stack:
+        return opening_brackets_stack[-1].position
     return "Success"
 
 
 def main():
+    choice = input()
     text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    print(mismatch)
+    if choice == "I":
+        print(mismatch)
+    else:
+        print(mismatch)
 if __name__ == "__main__":
     main()
