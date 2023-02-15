@@ -30,6 +30,7 @@ def main():
     choice = input()
     text = input()
     mismatch = find_mismatch(text)
+    choice.upper()
     # Printing answer, write your code here
     if choice == "I":
         print(mismatch)
