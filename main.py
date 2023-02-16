@@ -34,6 +34,7 @@ def main():
     # Printing answer, write your code here
     if choice == "I":
         print(mismatch)
-
+    else:
+        print(mismatch)
 if __name__ == "__main__":
     main()
