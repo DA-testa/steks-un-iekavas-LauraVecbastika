@@ -1,5 +1,5 @@
 # python3
-
+#Laura Vecbaštika 18.grupa 221RDC007
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
